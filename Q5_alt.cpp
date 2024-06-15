@@ -23,8 +23,8 @@ int main() {
         while (c) {
             cin >> score;
             if (stoi(score) < 0) cout << "grade must be positive number\n";
-                else
-                    if (stoi(score) > 100) cout << "grade must be less than 100\n";
+            else
+            if (stoi(score) > 100) cout << "grade must be less than 100\n";
             else break;
         }
 
@@ -44,6 +44,7 @@ void det_G (string score) {
 //  subtract 50 to get basline
 //  divide int by 10 and truncate to get its group
     int group = ((stoi(score) - 50)/10);
+    int i = 0;
 
 //  subtract by 1
 
@@ -51,11 +52,10 @@ void det_G (string score) {
 
 // number of 1 subtracted will be equal to the letter grade
 
-    if (group <= 3 && group >= 5)
+    while (group > 0) {
 
-
-    if group <=
-
+        (group - 1); i++;
+    }
 
 
 
